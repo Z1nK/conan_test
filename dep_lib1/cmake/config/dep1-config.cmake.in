@@ -1,0 +1,15 @@
+#  DEP1_INCLUDE_DIRS - include directories
+#  DEP1_LIBRARIES    - libraries to link against
+
+get_filename_component(DEP1_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+if(TARGET dep1::adder)
+else()
+  message(STATUS "dep1-config.cmake including ${DEP1_CMAKE_DIR}/dep1-targets.cmake")
+  include("${DEP1_CMAKE_DIR}/sup-di-targets.cmake")
+endif()
+
+set(DEP1_LIBRARIES dep1::adder)
+
+message(STATUS "dep1-config.cmake in ${CMAKE_CURRENT_LIST_FILE}")
+message(STATUS "DEP1_LIBRARIES ${DEP1_LIBRARIES}")
