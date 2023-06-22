@@ -3,6 +3,8 @@
 
 get_filename_component(DEP2_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 
+include(CMakeFindDependencyMacro)
+
 find_dependency(dep1)
 
 if(TARGET dep2::adderD OR TARGET dep2::multiplier)

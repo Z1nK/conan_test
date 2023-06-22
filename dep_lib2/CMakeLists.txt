@@ -14,4 +14,4 @@ endif()
 
 add_subdirectory(src)
 
-# include(installation)
+include(installation)

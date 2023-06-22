@@ -14,7 +14,6 @@ target_include_directories(multiplier PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/../..>
 )
 
-
 target_link_libraries(multiplier PUBLIC
   dep1::adder
 )

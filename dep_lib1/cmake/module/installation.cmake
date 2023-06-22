@@ -6,6 +6,8 @@
 
 set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/dep1)
 
+message("CMAKE_INSTALL_LIBDIR=" ${CMAKE_INSTALL_LIBDIR})
+
 # exporting targets to a script and installing it
 install(EXPORT dep1-targets FILE dep1-targets.cmake NAMESPACE dep1:: DESTINATION ${INSTALL_CONFIGDIR})
 
