@@ -3,6 +3,9 @@
 
 get_filename_component(MY_PROJECT_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 
+find_dependency(dep1)
+find_dependency(dep2)
+
 if(TARGET my_project::calculator)
 else()
   message(STATUS "my-project-config.cmake including ${MY_PROJECT_CMAKE_DIR}/my-project-targets.cmake")
