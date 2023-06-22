@@ -1,5 +1,6 @@
 #include "Multiplier.h"
 
+// TODO fix multiply algorithm
 Multiplier::Multiplier(int numA, int numB) : adder(numA, numB) {
 }
 

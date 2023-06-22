@@ -10,7 +10,7 @@ class calcProjConan(ConanFile):
     # Optional metadata
     license = "some licence"
     author = "Z1nK"
-    url = "https://github.com/Z1nK/conan_test/tree/main/my_project"
+    url = "https://github.com/Z1nK/conan_test/tree/main/project"
     description = "project"
     topics = ("conan", "test")
 
@@ -41,7 +41,7 @@ class calcProjConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure()
+        cmake.configure()   #cli_args=["-DEXPORT_BUILD_TREE=OFF"]
         cmake.build()
 
     def package(self):
