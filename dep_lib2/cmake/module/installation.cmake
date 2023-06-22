@@ -31,7 +31,7 @@ if(EXPORT_BUILD_TREE)
 endif()
 
 # -----------------------------------------------------------------------------
-# Creating and installing dep1-config.cmake
+# Creating and installing dep2-config.cmake
 # -----------------------------------------------------------------------------
 
 include(CMakePackageConfigHelpers)
@@ -46,7 +46,7 @@ configure_package_config_file(${CMAKE_CURRENT_LIST_DIR}/../config/dep2-config.cm
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dep2-config.cmake DESTINATION ${INSTALL_CONFIGDIR})
 
 # -----------------------------------------------------------------------------
-# Create and install dep1-config-version.cmake file
+# Create and install dep2-config-version.cmake file
 # -----------------------------------------------------------------------------
 
 write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/dep2-config-version.cmake VERSION

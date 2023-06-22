@@ -1,5 +1,5 @@
-#  MY_PROJECT_INCLUDE_DIRS - include directories
-#  MY_PROJECT_LIBRARIES    - libraries to link against
+#  DEP2_PROJECT_INCLUDE_DIRS - include directories
+#  DEP2_PROJECT_LIBRARIES    - libraries to link against
 
 get_filename_component(DEP2_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 
@@ -13,7 +13,7 @@ else()
   include("${DEP2_CMAKE_DIR}/dep2-targets.cmake")
 endif()
 
-set(MY_PROJECT_LIBRARIES dep2::adderD dep2::multiplier)
+set(DEP2_PROJECT_LIBRARIES dep2::adderD dep2::multiplier)
 
-message(STATUS "my-project-config.cmake in ${CMAKE_CURRENT_LIST_FILE}")
-message(STATUS "MY_PROJECT_LIBRARIES ${MY_PROJECT_LIBRARIES}")
+message(STATUS "dep2-project-config.cmake in ${CMAKE_CURRENT_LIST_FILE}")
+message(STATUS "DEP2_PROJECT_LIBRARIES ${DEP2_PROJECT_LIBRARIES}")
