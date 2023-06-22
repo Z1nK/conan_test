@@ -50,5 +50,5 @@ class calcProjConan(ConanFile):
 
     def package_info(self):
         self.cpp_info.set_property("cmake_build_modules", [os.path.join(
-            self.package_folder, "lib", "cmake", "my_project", "my-project-config.cmake")])
+            self.package_folder, "lib", "cmake", "calc_project", "calc-project-config.cmake")])
         self.cpp_info.libs = ["calculator"]
