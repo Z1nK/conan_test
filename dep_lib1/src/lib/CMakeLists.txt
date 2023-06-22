@@ -1,1 +1,1 @@
-add_subdirectory(Adder)
+add_subdirectory(dep1)

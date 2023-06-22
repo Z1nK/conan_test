@@ -5,8 +5,8 @@ target_compile_features(adder PRIVATE cxx_std_17)
 
 set_target_properties(adder PROPERTIES
   EXPORT_NAME adder
-  SOVERSION ${ADDER_SOVERSION}
-  VERSION ${ADDER_BUILDVERSION}
+  SOVERSION ${PROJ_SOVERSION}
+  VERSION ${PROJ_BUILDVERSION}
 )
 
 target_include_directories(adder PUBLIC

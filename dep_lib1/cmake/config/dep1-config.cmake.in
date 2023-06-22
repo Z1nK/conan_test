@@ -6,7 +6,7 @@ get_filename_component(DEP1_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 if(TARGET dep1::adder)
 else()
   message(STATUS "dep1-config.cmake including ${DEP1_CMAKE_DIR}/dep1-targets.cmake")
-  include("${DEP1_CMAKE_DIR}/sup-di-targets.cmake")
+  include("${DEP1_CMAKE_DIR}/dep1-targets.cmake")
 endif()
 
 set(DEP1_LIBRARIES dep1::adder)
