@@ -1,3 +1,5 @@
 /dep_lib1/build
 /dep_lib2/build
-/my_project/build
+/project/build
+*.html
+*.code-workspace

@@ -13,6 +13,9 @@ public:
     void set_a(int numA);
     void set_b(int numB);
 
+    int get_a();
+    int get_b();
+
 };
 
 #endif  // ADDER_H

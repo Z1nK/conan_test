@@ -13,6 +13,14 @@ void Adder::set_b(int numB) {
     b = numB;
 }
 
+int Adder::get_a() {
+    return a;
+}
+
+int Adder::get_b() {
+    return b;
+}
+
 int Adder::add() {
     return a + b;
 }
